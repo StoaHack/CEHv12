@@ -1,9 +1,9 @@
 CEH v12 Practical / CEH v12 Guia de estudio para examen practico
 
-La siuiente es una guia de las herrramientas y comandos que se utilizaron en cada uno de los modulos de la certificación CEH v12, se tomo en cuenta el material de Ecourseware, para fines practicos se mencionaran las herramientas que se consideren más utiles, ya que bajo mi perspectiva la certificación utiliza multiples herramientas para con un mismo fin, es posible que se mencionen más solo se abordará una
+La siuiente es una guia de las herrramientas y comandos que se utilizaron en cada uno de los modulos de la certificación CEH v12, se tomo en cuenta el material de Ecourseware (Especialmente la sección de laboratios), para fines practicos se mencionaran las herramientas que se consideren más utiles, ya que bajo mi perspectiva la certificación utiliza multiples herramientas para con un mismo fin, es posible que se mencionen más solo se abordará una
 
 # Introduction to Ethical Hacking - 01 
-N/A
+Este modulo esencialemente es teorico y no sé abordan herrramientas.
 
 # Footprinting and Reconnaissance - 02 
 
