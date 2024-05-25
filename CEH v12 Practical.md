@@ -1,8 +1,6 @@
 CEH v12 Practical / CEH v12 Guia de estudio para examen practico
 
-# A first-level heading
-## A second-level heading
-### A third-level heading
+La siuiente es una guia de las herrramientas y comandos que se utilizaron en cada uno de los modulos de la certificación CEH v12, se tomo en cuenta el material de Ecourseware, para fines practicos se mencionaran las herramientas que se consideren más utiles, ya que bajo mi perspectiva la certificación utiliza multiples herramientas para con un mismo fin, es posible que se mencionen más solo se abordará una
 
 # Introduction to Ethical Hacking - 01 
 N/A
