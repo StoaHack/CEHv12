@@ -50,11 +50,42 @@ Lista de ejemplos : https://www.exploit-db.com/google-hacking-database
 | inurl:/voice/advanced/ intitle:Linksys SPA configuration | Linksys VoIP |
 | inurl:github.com intext:.ftpconfig -issues  | Regresa informacion de credenciales ftp guardadas en Github |
 
+Lista los metadatos de un video de Youtube, como canal, fecha, ID del video, descripción, los pasos son los siguientes:
+1. Ingresa a https://mattw.io/youtube-metadata/
+2. Pega el link de tu video de Youtube
+3. Da clic en Submit
+4. Listo, se cargará la información del video
+
+Ejemplo https://mattw.io/youtube-metadata/?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DV_i3wCtn0qA&submit=true
+
+**Nota** Con las minitaturas  (thumbnails) se puede hacer una busqueda inversa de las imagenes en google para obtener mayor información.
+
+**Herramientas alternativas que no se aboradaran**
+- Google videos (https://www.google.com/videohp)
+- Yahoo videos (https://in.video.search.yahoo.com)
+- Video analysis tools such as EZGif (https://ezgif.com)
+- VideoReverser.com (https://www.videoreverser.com)
+
+**Busqueda inversa de imagenes**
+- Reverse image search tools such as TinEye Reverse Image Search (https://tineye.com)
+- Yahoo Image Search (https://images.search.yahoo.com), etc. to gather
+- Google Image https://images.google.com/
+
 ### 1.1- Gather Information from FTP Search Engines 
-Como obtener los metadatos de un video de Youtube 
+Los motores de búsqueda FTP proporcionan información sobre archivos y directorios críticos, incluyendo información valiosa como estrategias empresariales, documentos fiscales, registros personales de los empleados, registros financieros, software con licencia y otra información confidencial.
+
+Link:https://www.searchftps.net/
+
+1. Ingresa a https://www.searchftps.net/
+2. Ingresa la empresa u objetivo en la caja de texto para buscar
+3. Da lic en Search
+4. Listo se muestran los resultados
+
 
 ### 1.2- Gather Information using Advanced Google Hacking Techniques
+
 ### 1.3- Gather Information from Video Search Engines
+
 ### 1.4- Gather Information from IoT Search Engines 
 
 ## Perform Footprinting Through Web Services
