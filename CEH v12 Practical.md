@@ -6,6 +6,7 @@ La siuiente es una guia de las herrramientas y comandos que se utilizaron en cad
 Este modulo esencialemente es teorico y no sé abordan herrramientas.
 
 # Footprinting and Reconnaissance - 02 
+
 ## 1- Perform Footprinting Through Search Engines 
 
 ### 1.1- Gather Information using Advanced Google Hacking Techniques
@@ -103,13 +104,27 @@ En ambas el procedimiento es simple, una vez registrado, puede buscar por:
 - Puerto
 - Organización / Empresa / Objetivo
 
-## Perform Footprinting Through Web Services
+## 2. Perform Footprinting Through Web Services
 
-### Find the Company’s Domains and Sub-domains using Netcraft
-### Gather Personal Information using PeekYou Online People Search Service
-### Gather an Email List using theHarvester
-### Gather Information using Deep and Dark Web Searching
-### Determine Target OS Through Passive Footprinting 
+### 2.1 Find the Company’s Domains and Sub-domains using Netcraft
+En este tema se muestra la herramienta de netfcrat, si bien cuenta con diferentes funcionalidades, solo se hace enfasis en la herramienta de Site Report, además la intención aquí es buscar subdominios
++ Sitio: https://www.netcraft.com/
++ Sitio de herramientas: https://www.netcraft.com/tools/ **Nota:** Esta URL puede cambiar con el tiempo antes era https://www.netcraft.com/security-testing/
++ Herramienta a utilizar: https://sitereport.netcraft.com/ **Nota:** Para ver los subdominios debes dar clic en **Domain: -> TuSitio.TLD**
+
+**Alternativas para buscar subdominios de Council**
++ Sublist3r [(https://github.com)](https://github.com/aboul3la/Sublist3r) más adelante se aborda
++ Pentest-Tools Find Subdomains (https://pentest-tools.com)
+
+**Recomendación personal para encontrar dominios o subdominios**
++ Para encontrar subdominios en la vida real y no en laboratios https://crt.sh/
++ Ataque de fuerza bruta con gobuster
++ Sublist3r
+
+### 2.2 Gather Personal Information using PeekYou Online People Search Service
+### 2.3 Gather an Email List using theHarvester
+### 2.4 Gather Information using Deep and Dark Web Searching
+### 2.5 Determine Target OS Through Passive Footprinting 
 
 ##Perform Footprinting Through Social Networking Sites
 
