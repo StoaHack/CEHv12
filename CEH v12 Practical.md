@@ -7,6 +7,8 @@ Este modulo esencialemente es teorico y no sé abordan herrramientas.
 
 # Footprinting and Reconnaissance - 02 
 ## 1- Perform Footprinting Through Search Engines 
+
+### 1.1- Gather Information using Advanced Google Hacking Techniques
 Lista de todos los comandos : https://ahrefs.com/blog/google-advanced-search-operators/
 
 Tabla de comandos funcionales
@@ -50,6 +52,8 @@ Lista de ejemplos : https://www.exploit-db.com/google-hacking-database
 | inurl:/voice/advanced/ intitle:Linksys SPA configuration | Linksys VoIP |
 | inurl:github.com intext:.ftpconfig -issues  | Regresa informacion de credenciales ftp guardadas en Github |
 
+### 1.2- Gather Information from Video Search Engines
+
 Lista los metadatos de un video de Youtube, como canal, fecha, ID del video, descripción, los pasos son los siguientes:
 1. Ingresa a https://mattw.io/youtube-metadata/
 2. Pega el link de tu video de Youtube
@@ -71,7 +75,7 @@ Ejemplo https://mattw.io/youtube-metadata/?url=https%3A%2F%2Fwww.youtube.com%2Fw
 - Yahoo Image Search (https://images.search.yahoo.com), etc. to gather
 - Google Image https://images.google.com/
 
-### 1.1- Gather Information from FTP Search Engines 
+### 1.3- Gather Information from FTP Search Engines 
 Los motores de búsqueda FTP proporcionan información sobre archivos y directorios críticos, incluyendo información valiosa como estrategias empresariales, documentos fiscales, registros personales de los empleados, registros financieros, software con licencia y otra información confidencial.
 
 Link:https://www.searchftps.net/
@@ -81,12 +85,23 @@ Link:https://www.searchftps.net/
 3. Da lic en Search
 4. Listo se muestran los resultados
 
-
-### 1.2- Gather Information using Advanced Google Hacking Techniques
-
-### 1.3- Gather Information from Video Search Engines
+Alternativa No aboradada
+Link https://www.freewareweb.com 
 
 ### 1.4- Gather Information from IoT Search Engines 
+Los motores de búsqueda de IoT rastrean Internet en busca de dispositivos de IoT que sean de acceso público. Estos motores de búsqueda proporcionan información crucial, incluido el control de sistemas SCADA (Supervisión, Control y Adquisición de Datos), sistemas de control de tráfico, electrodomésticos conectados a Internet, electrodomésticos industriales, cámaras CCTV, etc.
+
+En la mayoría debes registratrte y en su versión gratuita las consultas estan limitadas, algunas de la plataformas son:
+1.- Shodan - https://www.shodan.io/
+2.- Censys - https://censys.com/
+
+En ambas el procedimiento es simple, una vez registrado, puede buscar por:
+- IP
+- Nombre de la marca del dispositivo
+- País
+- Protocolo
+- Puerto
+- Organización / Empresa / Objetivo
 
 ## Perform Footprinting Through Web Services
 
