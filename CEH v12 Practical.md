@@ -122,7 +122,61 @@ En este tema se muestra la herramienta de netfcrat, si bien cuenta con diferente
 + Sublist3r
 
 ### 2.2 Gather Personal Information using PeekYou Online People Search Service
+Las siguientes son plataformas que te pueden brindar informaciónde personas, sin embargo, son las la gente de USA, además de que todo se tiene que pagar, en los videos lo dan de referencia
+- PeekYou (es de paga, solo debes ingresar el nombe de la persona) https://www.peekyou.com/
+
+**Alternativas para no abordadas**
++ https://www.spokeo.com/
++ https://www.beenverified.com/
++ https://www.intelius.com/
++ https://pipl.com/ (Usuarios de redes sociales)
+
+**Nota:** Me da la impresión que todas las plataformas tiene un mecanismo de cargando para solo quitar el tiempo
+
 ### 2.3 Gather an Email List using theHarvester
+
+**theHarvester**  
+Tipo: Script Python  
+Objetivo: Extraer mails  
+theHarvester -d  [empresa] -l [# resultados] -b [motor de busqueda]  
+theHarvester -d  eccouncil -l 200 -b linkedin"  
+
+**Photon**
+Tipo: Script Python  
+Objetivo: Es un rastreador web avanzado y una herramienta osint para un análisis exhaustivo de sitios web  
+
+```"Es una crwler, Lista los links fuera del sitio, dentro del sitio y los scripts que utiliza
+python3 photon.py -u [url]  
+python3 photon.py -u [url] -l 3 -t 200 --wayback 
+
+Comandos
+usage: photon.py [options]
+
+  -u --url              root url
+  -l --level            levels to crawl
+  -t --threads          number of threads
+  -d --delay            delay between requests
+  -c --cookie           cookie
+  -r --regex            regex pattern
+  -s --seeds            additional seed urls
+  -e --export           export formatted result
+  -o --output           specify output directory
+  -v --verbose          verbose output
+  --keys                extract secret keys
+  --clone               clone the website locally
+  --exclude             exclude urls by regex
+  --stdout              print a variable to stdout
+  --timeout             http requests timeout
+  --ninja               ninja mode
+  --update              update photon
+  --headers             supply http headers
+  --dns                 enumerate subdomains & dns data
+  --only-urls           only extract urls
+  --wayback             Use URLs from archive.org as seeds
+  --user-agent          specify user-agent(s)"
+```
+
+
 ### 2.4 Gather Information using Deep and Dark Web Searching
 ### 2.5 Determine Target OS Through Passive Footprinting 
 
